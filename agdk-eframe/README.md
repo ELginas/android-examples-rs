@@ -23,4 +23,8 @@ docker run --rm -it agdk-frame-build
 docker cp <container id>:/home/android/app/build/outputs/apk/debug/app-debug.apk .
 ```
 
-Note: sliding with spacebar only updates cursor after you've done sliding (should keep updating pposition while sliding)
+Notes: 
+- sliding with spacebar only updates cursor after you've done sliding (should keep updating pposition while sliding)
+- locking the screen while typing and unlocking the screen hides keyboard but the cursor is still present
+- when rotated in landscape mode, keyboard doesn't pop out
+- cursor is too large when editing in Code Editor demo
