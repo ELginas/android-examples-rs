@@ -15,3 +15,12 @@ cargo ndk -t arm64-v8a -o app/src/main/jniLibs/  build
 ./gradlew installDebug
 adb shell am start -n co.realfit.agdkeframe/.MainActivity
 ```
+
+or use Docker:
+```
+docker build -t agdk-frame-build .
+docker run --rm -it agdk-frame-build
+docker cp <container id>:/home/android/app/build/outputs/apk/debug/app-debug.apk .
+```
+
+Note: sliding with spacebar only updates cursor after you've done sliding (should keep updating pposition while sliding)
